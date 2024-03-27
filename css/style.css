@@ -10,15 +10,19 @@ body{
     padding: 16px;
     /*font-family: WorkSans, sans-serif;*/
     background-color: #f1ddd0;
-    /*background-color: #698996;*/
+    /*background-color: #284a5e;
+    background-color: #698996;
+    background-color: #285e55;*/
+
+    /*colori belli 28565e  285e55 */
 }
 h1{
-    color: #503116;
     font-size: 48px;
     margin: 12px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    color: #503116;
+    margin-right: auto; */
     /*font-family: "Economica", sans-serif;*/
 }
 h2{
@@ -71,10 +75,17 @@ p{
     line-height: 1.5; /*spazio tra le linee*/
     /*font-family: "Raleway", sans-serif;*/
 }
+/* # COLORI*/
+/*# BACKGROUND*/
+/*# PADDING*/
+/*# MARGIN*/
+/*# FLEX*/
 .nav-links{
     display: flex;
     list-style: none;
     justify-content: space-around;
+    margin-bottom: 5%;
+    margin-top: 1%;
     
 }
 .imgs{
@@ -106,8 +117,10 @@ p{
     display: inline-block;
 }
 .wall{
-    background-color: #1d1e2c;
+    /*background-color: #194D3350 ;*/
+    /*background-color: #1d1e2cF2; /* aggiungendo un numero da 00 a FF alla fine gestisco la trasparenza*/
     padding: 10px;
+    border: 8px solid #171924;
    
     /*padding-top: 20px;*/
     border-radius: 16px;
@@ -124,10 +137,11 @@ p{
     border-radius: 8px;
     height: 53px;
     justify-content: center;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0.2%, rgba(255,255,255,0) 100%);
 
 }
 .gradient{
-    background-color: #f1ddd0 ;
+    /*background-color: #f1ddd0 ;*/ /* metto su left and right*/
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -157,9 +171,13 @@ flex-grow: 1;
 /* CAPIRE COME RENDERLO RESPONSIVE*/
 .left{
     justify-content: left;
+    background-image: linear-gradient(to left, #f1ddd0 50%, rgba(255, 255, 255, 0) 100%);
 }
 .right{
     align-items: right;
+}
+.align_left{
+    align-items: left;
 }
 /*END CAPIRE COME RENDERLO RESPONSIVE !*/
 .fill{
@@ -216,3 +234,83 @@ flex-grow: 1;
 .thirty{
     height: 30px;
 }
+.pattern{
+    background-color: #000000;
+    /*background-image: url('../images/waves.avif');*/
+    background-image: url('../images/ginkgo1.jpg');
+    width: 100%;
+    
+    object-fit:cover;
+}/*
+#overlay{
+    background-color: #1d1e2cF2;
+} */
+.bg_d_blue{
+    background-color: #1d1e2cF2;
+}   
+.overlay{
+    position:absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width:100%;
+    z-index:1;
+    background-color: #1d1e2cF2;
+    opacity: 95%;
+    border-radius: 8px;
+    margin: 0;
+
+
+
+    background-image: linear-gradient(to right, rgb(76, 86, 107) 5%, rgba(255, 255, 255, 0) 40%);
+}
+.overlay1{
+    /*inset: 0; stretch (è come scriver top right left e bottom tutti a 0*/
+    z-index: 2;
+}
+.position_rel{
+    position: relative;
+}
+.position_abs{
+    position: absolute;
+}
+.m_0{
+    margin: 0;
+}
+.color_b{
+    color: #000000;
+}
+.color_w{
+    color:white;
+}
+.color_p{
+    color:#f1ddd0;
+}
+.font_title{
+    font-family: "Delius Unicase", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.width_70{
+    width: 100%;
+}
+.bg_cream{
+    background-image: url("../images/cream_background.jpg") ;
+}
+.bg_cream_dark{
+    background-image: url("../images/bg_c_dark.jpg");
+}
+.m_bottom_0{
+    margin-bottom: 0;
+}
+.m_top_0{
+    margin-top: 0;
+}
+.h_10{
+    height: 10%;
+}
+.h_70{
+    height: 70%;
+}
+/* BOOTSTRAP */
+
